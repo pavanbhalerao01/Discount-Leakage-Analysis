@@ -26,7 +26,7 @@
 - [🔍 Key Findings](#-key-findings)
 - [💡 Recommendations](#-recommendations)
 - [🗂 Project Structure](#-project-structure)
-- [⚙️ How to Run](#%EF%B8%8F-how-to-reproduce)
+- [⚙️ How to Run](#%EF%B8%8F-how-to-run)
 - [⚠️ Limitations](#%EF%B8%8F-limitations)
 - [📁 Dataset](#-dataset)
 
