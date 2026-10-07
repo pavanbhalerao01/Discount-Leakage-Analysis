@@ -27,7 +27,6 @@
 - [💡 Recommendations](#-recommendations)
 - [🗂 Project Structure](#-project-structure)
 - [⚙️ How to Run](#%EF%B8%8F-how-to-run)
-- [⚠️ Limitations](#%EF%B8%8F-limitations)
 - [📁 Dataset](#-dataset)
 
 ---
