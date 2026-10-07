@@ -1,0 +1,8 @@
+segment_type,segment,households,net_sales,retailer_disc,pct_of_net_sales,pct_of_retailer_disc,disc_rate_pct
+"Deal group",Deal-dependent,625,1598651,440695,19.8,31.3,21.5
+"Deal group","Full-price leaning",625,2366762,254405,29.4,18.1,9.7
+"Deal group",Mixed,1250,4092030,710813,50.8,50.6,14.8
+"Spend quartile",Q1,625,4870621,804840,60.4,57.2,14.1
+"Spend quartile",Q2,625,1925128,355462,23.9,25.3,15.5
+"Spend quartile",Q3,625,954885,186117,11.9,13.2,16.3
+"Spend quartile",Q4,625,306810,59495,3.8,4.2,16.2

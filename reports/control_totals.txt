@@ -1,0 +1,6 @@
+=== Control Totals (transactions_clean.csv) ===
+Row count:          2,581,266
+Sum sales_value:    8,057,443.80
+Sum retailer_disc:  1,405,913.10
+Sum mfr_disc:       32,283.01
+Sum gross_sales:    9,495,639.91
