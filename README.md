@@ -26,7 +26,7 @@
 - [🔍 Key Findings](#-key-findings)
 - [💡 Recommendations](#-recommendations)
 - [🗂 Project Structure](#-project-structure)
-- [⚙️ How to Reproduce](#%EF%B8%8F-how-to-reproduce)
+- [⚙️ How to Run](#%EF%B8%8F-how-to-reproduce)
 - [⚠️ Limitations](#%EF%B8%8F-limitations)
 - [📁 Dataset](#-dataset)
 
@@ -162,23 +162,21 @@ discount-leakage-analysis/
 │   └── 01_cleaning_and_validation.ipynb   # Load, validate, clean, export
 ├── sql/
 │   ├── 01_setup_and_load.sql              # Create DB, tables, indexes, load CSVs
-│   └── 02_analysis.sql                    # 5 analysis queries + reconciliation checks
+│   └── 02_analysis.sql                    # 5 analysis queries 
 ├── data/
-│   ├── raw/          ← gitignored — download from Dunnhumby
-│   ├── clean/        ← gitignored — written by the notebook
-│   └── powerbi/      ← committed — 4 summary CSVs for Power BI
+│   ├── raw/          
+│   ├── clean/        
+│   └── powerbi/      
 ├── reports/
 │   └── control_totals.txt                 # Row counts + financial totals for SQL verification
-├── powerbi/
-│   └── dashboard_guide.md                 # Step-by-step Power BI build guide + all DAX
 ├── images/                                # Dashboard screenshots
 ├── README.md
-└── requirements.txt                       # pandas, jupyter
+└── requirements.txt                       
 ```
 
 ---
 
-## ⚙️ How to Reproduce
+## ⚙️ How to Run
 
 ```bash
 # 1. Install dependencies
@@ -201,23 +199,10 @@ mysql --local-infile=1 -u root -p
 SOURCE /path/to/sql/01_setup_and_load.sql;
 SOURCE /path/to/sql/02_analysis.sql;
 
-# 5. Verify reconciliation queries match reports/control_totals.txt
+# 5. Export 4 summary tables from MySQL to data/powerbi/ as CSV
 
-# 6. Export 4 summary tables from MySQL to data/powerbi/ as CSV
-
-# 7. Build the Power BI dashboard following powerbi/dashboard_guide.md
+# 6. Build the Power BI dashboard following powerbi/dashboard_guide.md
 ```
-
----
-
-## ⚠️ Limitations
-
-- **No cost data** — gross margin is a scenario assumption (10%–40% slider), not a real figure from the dataset
-- **Relative dates** — transactions use day numbers, not calendar dates; seasonality cannot be accounted for
-- **Single retailer** — findings may not generalise to other retail formats or geographies
-- **Campaign lift ≠ causation** — mailed households were not randomly assigned; pre-campaign spend gap (2.2–2.4×) confirms selection bias; a holdout test is needed for causal inference
-
----
 
 ## 📁 Dataset
 
